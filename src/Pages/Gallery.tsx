@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
-
+import Formal from '../assets/Formal.jpg';
+import Aesthetic from '../assets/Aesthetic.jpg';
+import Passion from '../assets/Passion.jpg';
 import './Gallery.css';
-
+interface Image { /* Created an Image interface to define the structure of the image objects. */
+  src: string;
+  title: string;
+}
 
 interface Image {
 
@@ -20,32 +25,14 @@ const ImageGallery: React.FC = () => {
   // Define the images array with objects containing src and title
 
   const images: Image[] = [
-
-    { src: './Formal.jpg', title: 'Formal Head Shot' },
-
-    { src: './Aesthetic.jpg', title: 'Aesthetic Photo' },
-
-    { src: './Passion.jpg', title: 'Photo of my Passion' },
-
-    { src: './FDP.png', title: 'My Final Year Project - BSc' },
-
-    { src: './Wheelchair.png', title: 'Film Prop - Wheelchair' },
-
-    { src: './Headphones_Clay.jpg', title: 'Designing Headphones - Clay' },
-
-    { src: './Headphones_Render.jpg', title: 'Designing Headphones - Rendered Images' },
-
-    { src: './Headphones_Instructions.jpg', title: 'Designing Headphones - Instruction Manual' },
-
-    { src: './Headphones_Poster.jpg', title: 'Designing Headphones - Poster' },
-
-    { src: './Mouse_Main.jpg', title: 'DFM Mouse - Keyshot Render 1' },
-
-    { src: './Mouse_Aux.jpg', title: 'DFM Mouse - Keyshot Render 2' },
+    { src: Formal, title: 'Formal Head Shot' }, //added the capability of dsiplaying a title under each image in the gallery
+    { src: Aesthetic, title: 'Aesthetic' },
+    { src: Passion, title: 'My Passion' },
+  ];
 
     // Add more images as needed
 
-  ];
+
 
 
   const goToNextImage = () => {

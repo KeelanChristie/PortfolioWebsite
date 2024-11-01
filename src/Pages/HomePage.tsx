@@ -18,10 +18,7 @@ function HomePage() {
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="footer">
-        <p>&copy; 2024 Keelan Christie. All Rights Reserved.</p>
-      </footer>
+
     </div>
   );
 }

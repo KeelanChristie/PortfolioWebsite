@@ -1,4 +1,6 @@
 import { useState } from 'react';
+
+import Fixperts from '../assets/Fixperts.mp4';
 import './Video Gallery.css';
 
 function VideoGallery() {
@@ -6,13 +8,9 @@ function VideoGallery() {
   const [index, setIndex] = useState(0);
 
   // An array of video URLs for the gallery
-  const videos = [
-        './Fixperts.mp4',
-        './CR_Solo.mp4',
-        './CR_Full.mp4',
+    const videos = [Fixperts];
     
     // Add more video URLs as needed
-  ];
 
   // Function to go to the next video in the gallery
   function goToNextVideo() {
