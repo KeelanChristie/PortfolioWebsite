@@ -1,0 +1,103 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body, html {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    height: 150px;
+  }
+  
+  /* Homepage Container */
+  .homepage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 70vh;
+  }
+  
+
+  /* Content Section */
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0px;
+    background-color: #f7f7f7;
+  }
+  
+ /* Text Section */
+.text-section {
+    max-width: 800px;
+    /* Adjust text position */
+    text-align: left; /* Change this to 'center' or 'right' to adjust alignment */
+    margin-left: 150px; /* Example: Adjust margin to move the text further to the right */
+  }
+  
+  .text-section h1 {
+    font-size: 10rem; /* Adjust main heading size here */
+    color: #333;
+  }
+  
+  .text-section p {
+    font-size: 2rem; /* Adjust paragraph text size here */
+    color: #666;
+    margin-top: 50px;
+  }
+  
+  
+  .image-section .profile-image {
+    max-width: auto;
+    height: 690px;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    text-align: center;
+    background-color: #bcbcbc;
+    padding: 0px;
+    color: white;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 1024px) {
+    .content-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image-section {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .text-section h1 {
+      font-size: 4rem;
+    }
+  
+    .text-section p {
+      font-size: 1.1rem;
+    }
+  
+    .profile-image {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
