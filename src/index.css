@@ -1,0 +1,26 @@
+/* Import Avenir Next LT Pro Light */
+@font-face {
+  font-family: 'Avenir Next LT Pro Light';
+  src: url('/fonts/avenir-next-lt-pro/avenir-next-lt-pro-light.woff2') format('woff2'),
+       url('/fonts/avenir-next-lt-pro/avenir-next-lt-pro-light.woff') format('woff');
+  font-weight: 300; /* Light weight */
+  font-style: normal;
+}
+
+/* Apply global font styles */
+body {
+  font-family: 'Avenir Next LT Pro Light', sans-serif; /* Body text uses Avenir */
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Apply Segoe UI to headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Segoe UI', sans-serif; /* Headings use Segoe UI */
+}
+
+/* Code font styles */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

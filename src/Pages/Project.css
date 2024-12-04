@@ -1,0 +1,136 @@
+.project-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.project-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.project-header p {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-content section {
+  margin-bottom: 2rem;
+}
+
+.project-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #85b479;
+  padding-bottom: 0.5rem;
+  color: #333;
+}
+
+.project-item {
+  display: flex;
+  align-items: flex-start; /* Align text and image to the top */
+  gap: 20px; /* Space between image and text */
+  margin-bottom: 1.5rem; /* Add spacing between projects */
+}
+
+.project-image {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  width: 250px; /* Set the image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  cursor: pointer; /* Make the image clickable */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.project-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.project-text {
+  flex: 1; /* Allow the text to take the remaining space */
+  text-align: justify; /* Justify text for clean alignment */
+  color: #555; /* Text color */
+  font-size: 1.3rem; /* Text size */
+  line-height: 1.6; /* Line height for readability */
+}
+
+
+/* Lightbox Styling */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3);
+}
+
+/* Lightbox Overlay Styling */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Lightbox Content */
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* Lightbox Image */
+.lightbox-image {
+  width: 750px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Lightbox Navigation Styling */
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.lightbox-prev {
+  left: -50px;
+}
+
+.lightbox-next {
+  right: -50px;
+}

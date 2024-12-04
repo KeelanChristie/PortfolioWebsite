@@ -1,0 +1,115 @@
+.video-gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 87.5vh;
+}
+
+.video-gallery-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.video-gallery-header h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.video-gallery-header p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.video-gallery-grid {
+  display: flex;
+  flex-direction: column; /* One video per row */
+  gap: 50px; /* Adjusts spacing between rows */
+}
+
+.video-gallery-item {
+  display: flex;
+  gap: 40px; /* Space between video and text */
+  align-items: flex-start; /* Aligns text to the top of the video */
+}
+
+.video-player {
+  width: 60%; /* Adjust as needed */
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.video-description {
+  flex: 1; /* Makes the description take up the remaining space */
+  text-align: left;
+}
+
+.video-description h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.video-description p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.reactions {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.reactions span:hover {
+  color: #85b479;
+}
+
+.comments-section {
+  margin-top: 20px;
+}
+
+.comments-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.comments-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.comments-section li {
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.comments-section textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.comments-section button {
+  background-color: #85b479;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.comments-section button:hover {
+  background-color: #539a61;
+}

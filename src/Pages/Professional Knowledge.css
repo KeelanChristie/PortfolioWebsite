@@ -1,0 +1,70 @@
+.pro-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.pro-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.pro-content section {
+  margin-bottom: 3rem;
+}
+
+.pro-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  border-bottom: 2px solid #85b479;
+  padding-bottom: 0.5rem;
+}
+
+.pro-content h3 {
+  font-size: 1.4rem;
+  margin: 1rem 0 0.5rem;
+  text-decoration: underline;
+}
+
+.pro-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.pro-column-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 4rem;
+}
+
+.pro-image {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  width: auto;
+  max-width: 5000px; /* Set the maximum width of the image */
+  height: 70px; /* Set the height of the image */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pro-container {
+    padding: 1rem;
+  }
+
+  .pro-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .pro-content p {
+    font-size: 1rem;
+  }
+
+  .pro-column-container {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+  }
+}

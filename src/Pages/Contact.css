@@ -1,0 +1,69 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh; /* Ensures the container takes the full height of the viewport */
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-container h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+/* Email Link Styling */
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333; /* Dark text color */
+  font-size: 1.1rem; /* Match font size with other elements */
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: #539a61; /* Blue hover effect */
+}
+
+.email-icon {
+  margin-right: 8px; /* Adds space between the icon and email address */
+  font-size: 1.2rem; /* Adjust icon size */
+}
+
+/* LinkedIn Icon Styling */
+.linkedin-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #6fb87d; /* LinkedIn blue */
+  font-size: 1.5rem; /* Adjust font size */
+  margin-top: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.linkedin-icon:hover {
+  color: #539a61; /* Darker LinkedIn blue */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.linkedin-icon .linkedin-text {
+  margin-left: 10px; /* Space between icon and text */
+  font-size: 1.2rem; /* Adjust text size */
+  color: #555; /* Match text color with other elements */
+}
+
+/* Push-in effect on click */
+.linkedin-icon:active {
+  transform: scale(0.9); /* Slightly shrink the icon when clicked */
+  color: #468b55; /* Optional: Change color when clicked */
+}

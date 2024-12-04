@@ -1,0 +1,125 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body, html {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  height: 100%; /* Full height of the viewport */
+  
+}
+
+/* Homepage Container */
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 88vh; /* Full viewport height */
+  overflow: hidden; /* Prevent extra scrolling */
+}
+
+/* Content Section */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1; /* Ensures content expands to fill space between header and footer */
+  padding: 0px 0px; /* Keeps padding around the content */
+  background-color: #f7f7f7;
+}
+
+/* Text Section */
+.text-section {
+  max-width: 700px;
+  text-align: left;
+  margin-left: 130px; /* Keeps text positioned as in the original */
+}
+
+.text-section h1 {
+  font-size: 10rem; /* Keep the heading size as in the original */
+  color: #333;
+}
+
+.text-section p {
+  font-size: 2rem; /* Keep the paragraph size as in the original */
+  color: #666;
+  margin-top: 50px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start completely transparent */
+  }
+  to {
+    opacity: 1; /* Fully visible */
+  }
+}
+
+/* Apply fade-in effect to the heading */
+.text-section h1 {
+  font-size: 10rem; /* Keep the heading size as in the original */
+  color: #333;
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation for the heading */
+}
+
+/* Apply fade-in effect to the paragraph */
+.text-section p {
+  font-size: 2rem; /* Keep the paragraph size as in the original */
+  color: #666;
+  margin-top: 50px;
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation for the paragraph */
+  animation-delay: 0.5s; /* Delays paragraph fade-in slightly */
+  animation-fill-mode: forwards; /* Ensures the final opacity is retained */
+}
+
+/* Image Section */
+.image-section {
+  display: flex;
+  align-items: flex-end; /* Aligns the image with the footer */
+  justify-content: center; /* Keeps the image horizontally aligned */
+}
+
+.image-section .profile-image {
+  height: 790px; /* Keep the image height as is */
+  object-fit: contain; /* Ensure proper scaling of the image */
+  margin-bottom: 0px; /* Adjust spacing above the footer */
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .content-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-section {
+    margin-left: 0; /* Center-align text on smaller screens */
+  }
+
+  .image-section {
+    margin-top: 20px;
+    align-items: center; /* Center the image */
+  }
+}
+
+@media (max-width: 768px) {
+  .text-section h1 {
+    font-size: 4rem;
+  }
+
+  .text-section p {
+    font-size: 1.1rem;
+  }
+
+  .profile-image {
+    width: 100%;
+    height: auto; /* Adjust for responsiveness */
+  }
+}

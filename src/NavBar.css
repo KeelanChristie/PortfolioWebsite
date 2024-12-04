@@ -1,0 +1,72 @@
+/* Container for the entire navbar */
+.navbar-container {
+  display: flex; /* Enables flexbox layout for alignment */
+  align-items: center; /* Vertically centers items within the container */
+  justify-content: space-between; /* Separates the logo and links */
+  position: fixed; /* Keeps the navbar at the top of the viewport */
+  width: 100%; /* Makes the navbar span the full width of the viewport */
+  top: 0; /* Anchors the navbar to the top of the page */
+  z-index: 10; /* Ensures the navbar stays above other elements */
+  padding: 0 10px; /* Adds a small margin between navbar content and screen edges */
+  background-color: #b2b2b2; /* Optional: keeps the nav background consistent */
+}
+
+
+/* Styling for the navbar menu */
+.navbar {
+  display: flex; /* Enables flexbox layout for the menu items */
+  gap: 20px; /* Adds space between each menu item */
+  list-style: none; /* Removes default list bullets */
+  padding: 0; /* Removes default padding for the list */
+  margin: 0; /* Removes default margin for the list */
+  flex-direction: row; /* Ensures menu items are aligned horizontally */
+  justify-content: center; /* Pushes the links to the right */
+  align-items: center; /* Vertically centers the links */
+}
+
+/* Individual navbar list items */
+.navbar li {
+  display: inline-block; /* Ensures list items behave like inline-block elements */
+  margin: 0 15px; /* Adds horizontal spacing between items */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  text-decoration: none; /* Removes the default underline from links */
+  color: #333; /* Sets text color to a dark gray */
+  font-weight: bold; /* Makes the text bold */
+  font-size: 1rem; /* Sets a consistent font size */
+  padding: 10px 15px; /* Adds space inside the clickable area */
+}
+
+/* Hover effect for navbar links */
+.navbar a:hover {
+  color: #FFFFFF; /* Changes text color to white on hover */
+}
+
+nav {
+  background-color: #cccccc; /* Sets a background color for the nav container */
+  padding: 1.2rem; /* Adds consistent padding around the navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+  width: 100%; /* Ensures the nav spans the full width */
+  display: flex; /* Enables flexbox for alignment */
+  justify-content: center; /* Centers the navigation items horizontally */
+  align-items: center; /* Vertically centers the navigation items */
+}
+
+/* Styling for the home icon */
+.nav-icon {
+  font-size: 1.2rem; /* Adjust the icon size */
+  color: #333; /* Match the color with other links */
+  transition: transform 0.1s ease, color 0.3s ease; /* Smooth hover and click transition */
+}
+
+.nav-icon:hover {
+  color: #539a61; /* Change icon color on hover */
+}
+
+/* Push-in effect on click */
+.nav-icon:active {
+  transform: scale(0.7); /* Slightly shrink the icon when clicked */
+  color: #468b55; /* Optional: Change color when clicked */
+}
