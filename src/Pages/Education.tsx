@@ -4,7 +4,7 @@ function Education() {
   return (
     <div className="education-container">
       <header className="education-header">
-        <h1>Education Background</h1>
+        <h1>Educational Background</h1>
         <p> Trained Product Designer.</p>
       </header>
       <div className="education-content">
