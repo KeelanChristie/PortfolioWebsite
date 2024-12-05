@@ -11,6 +11,7 @@ import Blog from './Pages/Blog';
 import VideoGallery from './Pages/Video Gallery';
 import Education from './Pages/Education';
 import ProfessionalKnowledge from './Pages/Professional Knowledge';
+import Chat from './Pages/Chat';
 import NavBar from './NavBar';
 import './App.css';
 import './NavBar.css';
@@ -26,6 +27,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Project" element={<Projects />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/Chat" element={<Chat />} />
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/VideoGallery" element={<VideoGallery />} />
         <Route path="/Blog" element={<Blog />} />

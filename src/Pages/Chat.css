@@ -1,0 +1,81 @@
+/* Chat container styling */
+.chat-container {
+    width: 60%; /* Matches the blog container width */
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    color: #333; /* Primary text color */
+    background: #f9fdf9; /* Light green-tinted background to align with your website */
+    border: 2px solid #85b479; /* Green border */
+    border-radius: 20px; /* Subtle rounded corners for consistency */
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+  }
+  
+  /* Messages styling */
+  .chat-messages {
+    flex-grow: 1;
+    overflow-y: auto; /* Enables scrolling for long chat history */
+    padding: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    border: 2px solid #ddd; /* Light border to frame the messages area */
+    border-radius: 10px;
+    background-color: #fff; /* White background for message area */
+  }
+  
+  .chat-message {
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: #e6f4e6; /* Pale green background for messages */
+    border-radius: 10px; /* Subtle rounded corners for individual messages */
+    word-wrap: break-word;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for messages */
+  }
+  
+  /* Sent messages styling */
+  .chat-message.sent {
+    background-color: #85b479; /* Green background for sent messages */
+    color: #fff; /* White text for contrast */
+    text-align: right; /* Align sent messages to the right */
+  }
+  
+  /* Form styling */
+  .chat-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+  }
+  
+  .chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 20px; /* Rounded corners */
+    border: 1px solid #ccc;
+    background-color: #f0f5f0; /* Very light green */
+    font-size: 1rem;
+    color: #333; /* Dark text for readability */
+  }
+  
+  /* Send button styling */
+  .chat-send-button {
+    padding: 10px 20px;
+    background-color: #85b479; /* Matches website's green */
+    color: #fff; /* White text for contrast */
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    font-size: 1rem;
+  }
+  
+  .chat-send-button:hover {
+    background-color: #539a61; /* Darker green for hover */
+    transform: scale(1.1); /* Enlarges the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+  }
+  
